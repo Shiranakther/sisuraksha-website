@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SISURAKSHA – Intelligent Child Safety Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">SISURAKSHA</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-text">Initializing Safety Platform...</div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-brand">
+      <span class="brand-icon"><i class="fas fa-shield-halved"></i></span>
+      <span class="brand-text">SISURAKSHA</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#research" class="nav-link">Research</a></li>
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#timeline" class="nav-link">Timeline</a></li>
+      <li><a href="#team" class="nav-link">Team</a></li>
+      <li><a href="#progress" class="nav-link">Progress</a></li>
+      <li><a href="#documents" class="nav-link">Documents</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <i class="fas fa-microchip"></i>&nbsp; Research Group 25-26J-282 &nbsp;·&nbsp; SLIIT
+    </div>
+    <h1 class="hero-title reveal">
+      <span class="title-sisu">SISU</span><span class="title-raksha">RAKSHA</span>
+    </h1>
+    <p class="hero-sub reveal">Intelligent Child Safety Platform for School Buses</p>
+    <p class="hero-tagline reveal">
+      Protecting the Future of Sri Lanka Through Integrated<br/>
+      <span class="highlight">Edge-AI</span> · <span class="highlight">IoT</span> · <span class="highlight">Blockchain</span> Safety Solutions
+    </p>
+    <div class="hero-stats reveal">
+      <div class="stat"><span class="stat-num" data-target="97.3">0</span><span>%</span><small>Face ID Accuracy</small></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="100">0</span><span>%</span><small>Tamper Detection</small></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="11.4">0</span><span>%</span><small>Fuel Reduction</small></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="300">0</span><span>ms</span><small>Emergency Latency</small></div>
+    </div>
+    <div class="hero-ctas reveal">
+      <a href="#research" class="btn btn-primary"><i class="fas fa-flask"></i> Explore Research</a>
+      <a href="#team" class="btn btn-outline"><i class="fas fa-users"></i> Meet the Team</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <div class="scroll-dot"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-label reveal">The Challenge</div>
+    <h2 class="section-title reveal">Why SISURAKSHA?</h2>
+    <div class="about-grid">
+      <div class="about-problem reveal">
+        <div class="problem-card">
+          <div class="card-icon red"><i class="fas fa-triangle-exclamation"></i></div>
+          <h3>The Problem</h3>
+          <p>Traditional school bus safety relies on manual observation. Drivers must focus on the road, causing dangerous delays in accident detection. Static routes waste fuel at empty stops, and manual attendance logs lack real-time visibility and data integrity.</p>
+          <ul class="problem-list">
+            <li><i class="fas fa-times-circle"></i> No real-time hazard detection</li>
+            <li><i class="fas fa-times-circle"></i> Manual, unreliable attendance logs</li>
+            <li><i class="fas fa-times-circle"></i> Inefficient "ghost stop" routing</li>
+            <li><i class="fas fa-times-circle"></i> Privacy risks with cloud biometrics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-arrow reveal">
+        <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="about-solution reveal">
+        <div class="solution-card">
+          <div class="card-icon gold"><i class="fas fa-shield-halved"></i></div>
+          <h3>Our Solution</h3>
+          <p>A unified smart platform integrating IoT sensors (ESP32), Edge-AI (NVIDIA Jetson Nano), and Hybrid Blockchain — providing proactive safety, verifiable attendance, and optimized routing entirely at the edge.</p>
+          <ul class="solution-list">
+            <li><i class="fas fa-check-circle"></i> Real-time hazard & accident detection</li>
+            <li><i class="fas fa-check-circle"></i> Blockchain-secured RFID + Face ID</li>
+            <li><i class="fas fa-check-circle"></i> Attendance-Driven Dynamic Routing</li>
+            <li><i class="fas fa-check-circle"></i> PDPA-compliant Edge-AI processing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="objectives-grid">
+      <h3 class="sub-title reveal">Project Objectives</h3>
+      <div class="obj-cards">
+        <div class="obj-card reveal">
+          <div class="obj-num">01</div>
+          <i class="fas fa-sensor"></i>
+          <p>Develop multi-sensor accident and emergency hazard detection</p>
+        </div>
+        <div class="obj-card reveal">
+          <div class="obj-num">02</div>
+          <i class="fas fa-eye"></i>
+          <p>Implement ML-based window and footboard safety monitoring</p>
+        </div>
+        <div class="obj-card reveal">
+          <div class="obj-num">03</div>
+          <i class="fas fa-fingerprint"></i>
+          <p>Deploy Edge-AI biometric attendance system (PDPA compliant)</p>
+        </div>
+        <div class="obj-card reveal">
+          <div class="obj-num">04</div>
+          <i class="fas fa-route"></i>
+          <p>Design Attendance-Driven Dynamic Routing (ADDR) engine</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="section research-section">
+  <div class="container">
+    <div class="section-label reveal">Innovation</div>
+    <h2 class="section-title reveal">Research & Methodology</h2>
+
+    <div class="research-domain reveal">
+      <div class="domain-tag"><i class="fas fa-microchip"></i> Cyber-Physical Systems (CPS)</div>
+      <div class="domain-tag"><i class="fas fa-brain"></i> Edge-AI</div>
+      <div class="domain-tag"><i class="fas fa-link"></i> Hybrid Blockchain</div>
+      <div class="domain-tag"><i class="fas fa-wifi"></i> IoT Architecture</div>
+      <div class="domain-tag"><i class="fas fa-car"></i> Intelligent Transportation</div>
+    </div>
+
+    <div class="arch-section reveal">
+      <h3 class="sub-title">System Architecture</h3>
+      <div class="arch-layers">
+        <div class="arch-layer">
+          <div class="layer-num">L4</div>
+          <div class="layer-info">
+            <div class="layer-name">Presentation Layer</div>
+            <div class="layer-desc">React.js / React Native · Parent · Driver · Admin Apps</div>
+          </div>
+          <div class="layer-icon"><i class="fas fa-mobile-screen"></i></div>
+        </div>
+        <div class="arch-connector"></div>
+        <div class="arch-layer">
+          <div class="layer-num">L3</div>
+          <div class="layer-info">
+            <div class="layer-name">Backend Service Layer</div>
+            <div class="layer-desc">Node.js/Express · PostgreSQL · MongoDB · REST API</div>
+          </div>
+          <div class="layer-icon"><i class="fas fa-server"></i></div>
+        </div>
+        <div class="arch-connector"></div>
+        <div class="arch-layer">
+          <div class="layer-num">L2</div>
+          <div class="layer-info">
+            <div class="layer-name">Edge Processing Layer</div>
+            <div class="layer-desc">NVIDIA Jetson Nano · ESP32 · CAN Bus · Local AI Inference</div>
+          </div>
+          <div class="layer-icon"><i class="fas fa-cpu"></i></div>
+        </div>
+        <div class="arch-connector"></div>
+        <div class="arch-layer active-layer">
+          <div class="layer-num">L1</div>
+          <div class="layer-info">
+            <div class="layer-name">Physical / IoT Layer</div>
+            <div class="layer-desc">MQ-2 · MPU9250 · Hall-effect · GPS · RFID · Solenoid</div>
+          </div>
+          <div class="layer-icon"><i class="fas fa-microchip"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="innovations-grid">
+      <h3 class="sub-title reveal">Novel Contributions</h3>
+      <div class="inno-cards">
+        <div class="inno-card reveal">
+          <div class="inno-icon"><i class="fas fa-door-open"></i></div>
+          <h4>CA-AEES</h4>
+          <p>Context-Aware Emergency Egress System — automated door mechanism with dual-verification interlocks deploying only at zero velocity with clear perimeter.</p>
+          <div class="inno-badge">&lt; 300ms latency</div>
+        </div>
+        <div class="inno-card reveal">
+          <div class="inno-icon"><i class="fas fa-face-smile"></i></div>
+          <h4>MobileFaceNet @ Edge</h4>
+          <p>Fine-tuned biometric identification achieving 99.12% accuracy at 120ms latency — fully offline, PDPA-compliant, zero data leaves the bus.</p>
+          <div class="inno-badge">99.12% accuracy</div>
+        </div>
+        <div class="inno-card reveal">
+          <div class="inno-icon"><i class="fas fa-map-location-dot"></i></div>
+          <h4>Segmented Polyline Analysis</h4>
+          <p>Novel routing using real road geometry rather than Euclidean distance — improving driver-student matching accuracy by 26% at 18ms computation time.</p>
+          <div class="inno-badge">26% improvement</div>
+        </div>
+        <div class="inno-card reveal">
+          <div class="inno-icon"><i class="fas fa-cube"></i></div>
+          <h4>Hybrid Blockchain</h4>
+          <p>SHA-256 hash chaining anchored to Ethereum (Sepolia) — achieving 100% tamper-detection rate in simulations for attendance record integrity.</p>
+          <div class="inno-badge">100% tamper-proof</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-stack reveal">
+      <h3 class="sub-title">Technologies Used</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <div class="tech-cat-label"><i class="fas fa-microchip"></i> Hardware</div>
+          <div class="tech-items">
+            <span>ESP32</span><span>NVIDIA Jetson Nano</span><span>PN532 RFID</span>
+            <span>MPU9250 IMU</span><span>MQ-2 Gas</span><span>LM393 Hall</span><span>GPS Module</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <div class="tech-cat-label"><i class="fas fa-brain"></i> AI / ML</div>
+          <div class="tech-items">
+            <span>YOLOv8</span><span>MobileFaceNet</span><span>TensorFlow Lite</span>
+            <span>Roboflow</span><span>Google Colab</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <div class="tech-cat-label"><i class="fas fa-code"></i> Software</div>
+          <div class="tech-items">
+            <span>Node.js</span><span>React.js</span><span>React Native</span>
+            <span>Python/Flask</span><span>PostgreSQL</span><span>MongoDB</span><span>OSRM</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <div class="tech-cat-label"><i class="fas fa-link"></i> Blockchain</div>
+          <div class="tech-items">
+            <span>Ethereum (Sepolia)</span><span>SHA-256 Hashing</span><span>Hybrid Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section features-section">
+  <div class="container">
+    <div class="section-label reveal">Core Modules</div>
+    <h2 class="section-title reveal">System Features</h2>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-glow red"></div>
+        <div class="feature-icon"><i class="fas fa-car-burst"></i></div>
+        <h3>Smart Hazard Guard</h3>
+        <p>Multi-sensor fusion detecting rollover, fire, gas, and water hazards with a 60-second driver verification period to eliminate false alarms.</p>
+        <div class="feature-tags">
+          <span>MPU9250</span><span>MQ-2</span><span>60s Verify</span>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-glow gold"></div>
+        <div class="feature-icon"><i class="fas fa-eye"></i></div>
+        <h3>Active Passenger Monitor</h3>
+        <p>Real-time YOLOv8-powered audio alerts when students place limbs outside windows or stand on the footboard while the bus is in motion.</p>
+        <div class="feature-tags">
+          <span>YOLOv8</span><span>Audio Alert</span><span>Hall Sensor</span>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-glow blue"></div>
+        <div class="feature-icon"><i class="fas fa-id-card"></i></div>
+        <h3>Blockchain Attendance</h3>
+        <p>RFID + Face-ID dual verification with SHA-256 hash chaining anchored to Ethereum for immutable, tamper-proof attendance records.</p>
+        <div class="feature-tags">
+          <span>RFID</span><span>Face-ID</span><span>Ethereum</span>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-glow green"></div>
+        <div class="feature-icon"><i class="fas fa-route"></i></div>
+        <h3>Dynamic Routing (ADDR)</h3>
+        <p>Greedy nearest-neighbor algorithm with IRI road-roughness penalties and real-time graph pruning to eliminate ghost stops and reduce fuel waste.</p>
+        <div class="feature-tags">
+          <span>OSRM</span><span>Greedy NN</span><span>IRI Penalty</span>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-glow purple"></div>
+        <div class="feature-icon"><i class="fas fa-door-open"></i></div>
+        <h3>Emergency Egress (CA-AEES)</h3>
+        <p>Solenoid-actuated door with dual-verification: zero-velocity check + perimeter clearance. Deploys in under 300ms for critical situations.</p>
+        <div class="feature-tags">
+          <span>Solenoid</span><span>Dual-Verify</span><span>&lt;300ms</span>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-glow orange"></div>
+        <div class="feature-icon"><i class="fas fa-wifi-slash"></i></div>
+        <h3>Offline-First IoT</h3>
+        <p>Resilient architecture that buffers all sensor data locally during connectivity loss, with 99.5% successful sync rate upon reconnection.</p>
+        <div class="feature-tags">
+          <span>Local Buffer</span><span>99.5% Sync</span><span>CAN Bus</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-roles reveal">
+      <h3 class="sub-title">User Roles</h3>
+      <div class="roles-grid">
+        <div class="role-card">
+          <i class="fas fa-user-shield"></i>
+          <h4>Parent</h4>
+          <ul>
+            <li>Report child absences</li>
+            <li>Live boarding status</li>
+            <li>Nearest bus route map</li>
+          </ul>
+        </div>
+        <div class="role-card">
+          <i class="fas fa-steering-wheel"></i>
+          <h4>Driver</h4>
+          <ul>
+            <li>Optimized pickup sequence</li>
+            <li>Real-time safety alerts</li>
+            <li>Emergency override controls</li>
+          </ul>
+        </div>
+        <div class="role-card">
+          <i class="fas fa-user-tie"></i>
+          <h4>Administrator</h4>
+          <ul>
+            <li>Global fleet oversight</li>
+            <li>Vehicle approval & audit</li>
+            <li>Blockchain integrity checks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="section timeline-section">
+  <div class="container">
+    <div class="section-label reveal">Roadmap</div>
+    <h2 class="section-title reveal">Project Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal completed">
+        <div class="tl-marker"><i class="fas fa-check"></i></div>
+        <div class="tl-content">
+          <div class="tl-phase">Phase 1</div>
+          <h4>Requirements & Feasibility</h4>
+          <p>Literature survey, identification of school bus safety needs, and initial requirements gathering.</p>
+          <div class="tl-status done">Completed</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal completed">
+        <div class="tl-marker"><i class="fas fa-check"></i></div>
+        <div class="tl-content">
+          <div class="tl-phase">Phase 2</div>
+          <h4>Hardware Prototyping</h4>
+          <p>ESP32 and sensor integration, solenoid door mechanism testing, Hall-effect movement detection setup.</p>
+          <div class="tl-status done">Completed</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal completed">
+        <div class="tl-marker"><i class="fas fa-check"></i></div>
+        <div class="tl-content">
+          <div class="tl-phase">Phase 3</div>
+          <h4>AI Model Training</h4>
+          <p>YOLOv8 trained in Roboflow/Google Colab for behavior monitoring; MobileFaceNet fine-tuned for biometrics.</p>
+          <div class="tl-status done">Completed</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal active">
+        <div class="tl-marker pulse"><i class="fas fa-code"></i></div>
+        <div class="tl-content">
+          <div class="tl-phase">Phase 4</div>
+          <h4>Blockchain & Backend Integration</h4>
+          <p>Hybrid blockchain anchoring, Node.js REST API development, and ADDR engine implementation.</p>
+          <div class="tl-status inprogress">In Progress</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="tl-marker"><i class="fas fa-flask"></i></div>
+        <div class="tl-content">
+          <div class="tl-phase">Phase 5</div>
+          <h4>Evaluation & Testing</h4>
+          <p>Bench-level trials, 200 RFID scan tests, real bus evidence collection, and system-wide integration testing.</p>
+          <div class="tl-status upcoming">Upcoming</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="tl-marker"><i class="fas fa-graduation-cap"></i></div>
+        <div class="tl-content">
+          <div class="tl-phase">Phase 6</div>
+          <h4>Final Documentation</h4>
+          <p>Completion of undergraduate dissertations and final documentation — April–August 2026.</p>
+          <div class="tl-status upcoming">April 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section team-section">
+  <div class="container">
+    <div class="section-label reveal">The People</div>
+    <h2 class="section-title reveal">Research Team</h2>
+    <p class="section-desc reveal">Group 25-26J-282 · Sri Lanka Institute of Information Technology</p>
+    <div class="team-grid">
+      <div class="team-card reveal" data-member="1">
+        <div class="team-avatar">
+          <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          <div class="avatar-ring"></div>
+        </div>
+        <div class="team-info">
+          <h3>Thanaweera A.P.K.S.</h3>
+          <div class="member-id">IT22606624</div>
+          <div class="team-role">Lead – Accident & Window Safety</div>
+          <p class="team-desc">Multi-sensor accident/hazard detection & YOLOv8-based student behavior monitoring.</p>
+          <div class="team-tags">
+            <span>ESP32</span><span>YOLOv8</span><span>MPU9250</span>
+          </div>
+          <a href="#progress" class="member-link" onclick="showMember(1)">View Progress <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="team-card reveal" data-member="2">
+        <div class="team-avatar">
+          <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          <div class="avatar-ring"></div>
+        </div>
+        <div class="team-info">
+          <h3>R.I.S.R. Pinto</h3>
+          <div class="member-id">IT22610102</div>
+          <div class="team-role">Lead – Driver & Footboard Monitoring</div>
+          <p class="team-desc">Hall-effect movement sensing for footboard occupancy and AI driver fatigue analysis.</p>
+          <div class="team-tags">
+            <span>Hall Sensor</span><span>IR Sensing</span><span>State Machine</span>
+          </div>
+          <a href="#progress" class="member-link" onclick="showMember(2)">View Progress <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="team-card reveal" data-member="3">
+        <div class="team-avatar">
+          <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          <div class="avatar-ring"></div>
+        </div>
+        <div class="team-info">
+          <h3>A.M.D.C. Kumara</h3>
+          <div class="member-id">IT22600134</div>
+          <div class="team-role">Lead – Egress & Biometrics</div>
+          <p class="team-desc">Automated CA-AEES emergency egress system and Edge-AI MobileFaceNet biometrics.</p>
+          <div class="team-tags">
+            <span>MobileFaceNet</span><span>Solenoid</span><span>PDPA</span>
+          </div>
+          <a href="#progress" class="member-link" onclick="showMember(3)">View Progress <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="team-card reveal" data-member="4">
+        <div class="team-avatar">
+          <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          <div class="avatar-ring"></div>
+        </div>
+        <div class="team-info">
+          <h3>M.H.S. Akther</h3>
+          <div class="member-id">IT22590312</div>
+          <div class="team-role">Lead – Blockchain & Attendance</div>
+          <p class="team-desc">Hybrid blockchain RFID attendance and Segmented Polyline Analysis for routing.</p>
+          <div class="team-tags">
+            <span>Ethereum</span><span>OSRM</span><span>MongoDB</span>
+          </div>
+          <a href="#progress" class="member-link" onclick="showMember(4)">View Progress <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="supervisors reveal">
+      <h3 class="sub-title">Supervisors</h3>
+      <div class="supervisor-cards">
+        <div class="sup-card">
+          <div class="sup-avatar"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div><strong>Ms. Thisara Shyamalee</strong><br/><small>Project Supervisor · SLIIT</small></div>
+        </div>
+        <div class="sup-card">
+          <div class="sup-avatar"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div><strong>Ms. Osuri Dunuwila</strong><br/><small>Project Co-Supervisor · SLIIT</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRESS -->
+<section id="progress" class="section progress-section">
+  <div class="container">
+    <div class="section-label reveal">Individual Tracking</div>
+    <h2 class="section-title reveal">Member Progress</h2>
+
+    <div class="progress-tabs reveal">
+      <button class="ptab active" onclick="showMember(1)"><i class="fas fa-shield-halved"></i> Thanaweera</button>
+      <button class="ptab" onclick="showMember(2)"><i class="fas fa-eye"></i> Pinto</button>
+      <button class="ptab" onclick="showMember(3)"><i class="fas fa-fingerprint"></i> Kumara</button>
+      <button class="ptab" onclick="showMember(4)"><i class="fas fa-link"></i> Akther</button>
+    </div>
+
+    <div id="member-panels">
+      <!-- MEMBER 1 -->
+      <div class="member-panel active" id="panel-1">
+        <div class="mp-header">
+          <div class="mp-avatar"><i class="fas fa-shield-halved"></i></div>
+          <div class="mp-identity">
+            <h3>Thanaweera A.P.K.S.</h3>
+            <span class="mp-id">IT22606624</span>
+            <span class="mp-role">Lead Researcher: Accident & Window Safety</span>
+          </div>
+          <div class="mp-overall">
+            <div class="overall-ring" data-progress="80">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32" /><circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="40" /></svg>
+              <span>80%</span>
+            </div>
+            <small>Overall Progress</small>
+          </div>
+        </div>
+        <div class="mp-body">
+          <div class="mp-col">
+            <h4><i class="fas fa-check-double"></i> Completed Tasks</h4>
+            <ul class="task-list">
+              <li class="done"><i class="fas fa-check"></i> Sensor selection (MPU9250, MQ-2)</li>
+              <li class="done"><i class="fas fa-check"></i> Accident detection logic implementation</li>
+              <li class="done"><i class="fas fa-check"></i> YOLOv8 model training for window safety</li>
+              <li class="done"><i class="fas fa-check"></i> 60-second driver verification mechanism</li>
+            </ul>
+            <h4><i class="fas fa-trophy"></i> Achievements</h4>
+            <div class="achievement-cards">
+              <div class="ach"><i class="fas fa-star"></i> Integrated MPU9250 + MQ2 for comprehensive hazard mapping</div>
+              <div class="ach"><i class="fas fa-star"></i> 60-second false-alert prevention system deployed</div>
+            </div>
+          </div>
+          <div class="mp-col">
+            <h4><i class="fas fa-spinner"></i> Current Work</h4>
+            <div class="current-task">Optimizing YOLOv8 confidence thresholds for varied lighting conditions</div>
+            <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
+            <div class="progress-bars">
+              <div class="prog-item">
+                <div class="prog-label"><span>Sensor Integration</span><span>95%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:95%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Accident Detection</span><span>90%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:90%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Window Safety ML</span><span>75%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:75%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Adaptive Thresholds</span><span>40%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:40%"></div></div>
+              </div>
+            </div>
+            <h4><i class="fas fa-flag"></i> Next Milestones</h4>
+            <ul class="task-list">
+              <li><i class="fas fa-clock"></i> Adaptive threshold learning with real road data</li>
+              <li><i class="fas fa-clock"></i> Extended field testing in varied conditions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEMBER 2 -->
+      <div class="member-panel" id="panel-2">
+        <div class="mp-header">
+          <div class="mp-avatar" style="background:var(--gold)"><i class="fas fa-eye"></i></div>
+          <div class="mp-identity">
+            <h3>R.I.S.R. Pinto</h3>
+            <span class="mp-id">IT22610102</span>
+            <span class="mp-role">Lead Researcher: Driver & Footboard Monitoring</span>
+          </div>
+          <div class="mp-overall">
+            <div class="overall-ring" data-progress="75">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32" /><circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="50" /></svg>
+              <span>75%</span>
+            </div>
+            <small>Overall Progress</small>
+          </div>
+        </div>
+        <div class="mp-body">
+          <div class="mp-col">
+            <h4><i class="fas fa-check-double"></i> Completed Tasks</h4>
+            <ul class="task-list">
+              <li class="done"><i class="fas fa-check"></i> Hall sensor pulse-based movement detection</li>
+              <li class="done"><i class="fas fa-check"></i> IR step occupancy mapping</li>
+              <li class="done"><i class="fas fa-check"></i> SAFE-WARNING-CRITICAL state machine</li>
+              <li class="done"><i class="fas fa-check"></i> Transitioned GPS → Hall-effect sensing</li>
+            </ul>
+            <h4><i class="fas fa-trophy"></i> Achievements</h4>
+            <div class="achievement-cards">
+              <div class="ach"><i class="fas fa-star"></i> Reliable low-speed movement detection via Hall-effect</div>
+              <div class="ach"><i class="fas fa-star"></i> Footboard state machine with 3-tier alert levels</div>
+            </div>
+          </div>
+          <div class="mp-col">
+            <h4><i class="fas fa-exclamation-triangle"></i> Challenges</h4>
+            <div class="challenge-card">False detections in driver monitoring due to lighting variations and bus vibration — ongoing calibration and filtering work.</div>
+            <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
+            <div class="progress-bars">
+              <div class="prog-item">
+                <div class="prog-label"><span>Footboard Detection</span><span>90%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:90%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>State Machine</span><span>85%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:85%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Driver Monitoring</span><span>60%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:60%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Vibration Filtering</span><span>50%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:50%"></div></div>
+              </div>
+            </div>
+            <h4><i class="fas fa-flag"></i> Next Milestones</h4>
+            <ul class="task-list">
+              <li><i class="fas fa-clock"></i> Resolve driver monitoring stability in high-vibration</li>
+              <li><i class="fas fa-clock"></i> Integrate fatigue detection with safety state machine</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEMBER 3 -->
+      <div class="member-panel" id="panel-3">
+        <div class="mp-header">
+          <div class="mp-avatar" style="background:#7c3aed"><i class="fas fa-fingerprint"></i></div>
+          <div class="mp-identity">
+            <h3>A.M.D.C. Kumara</h3>
+            <span class="mp-id">IT22600134</span>
+            <span class="mp-role">Lead Researcher: Egress & Biometrics</span>
+          </div>
+          <div class="mp-overall">
+            <div class="overall-ring" data-progress="85">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32" /><circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="30" /></svg>
+              <span>85%</span>
+            </div>
+            <small>Overall Progress</small>
+          </div>
+        </div>
+        <div class="mp-body">
+          <div class="mp-col">
+            <h4><i class="fas fa-check-double"></i> Completed Tasks</h4>
+            <ul class="task-list">
+              <li class="done"><i class="fas fa-check"></i> Solenoid-actuated door system prototyping</li>
+              <li class="done"><i class="fas fa-check"></i> MobileFaceNet fine-tuning</li>
+              <li class="done"><i class="fas fa-check"></i> CA-AEES dual-verification interlock</li>
+              <li class="done"><i class="fas fa-check"></i> PDPA compliance – zero cloud transmission</li>
+            </ul>
+            <h4><i class="fas fa-trophy"></i> Achievements</h4>
+            <div class="achievement-cards">
+              <div class="ach"><i class="fas fa-star"></i> Sub-300ms emergency door deployment latency</div>
+              <div class="ach"><i class="fas fa-star"></i> 97.32% biometric identification accuracy</div>
+              <div class="ach"><i class="fas fa-star"></i> 100% PDPA compliance — zero biological data to cloud</div>
+            </div>
+          </div>
+          <div class="mp-col">
+            <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
+            <div class="progress-bars">
+              <div class="prog-item">
+                <div class="prog-label"><span>Emergency Egress</span><span>95%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:95%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Face Recognition</span><span>90%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:90%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>PDPA Compliance</span><span>100%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:100%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Field Trials</span><span>50%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:50%"></div></div>
+              </div>
+            </div>
+            <h4><i class="fas fa-flag"></i> Next Milestones</h4>
+            <ul class="task-list">
+              <li><i class="fas fa-clock"></i> Extended field trials in varied weather</li>
+              <li><i class="fas fa-clock"></i> Demographic validation across student datasets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEMBER 4 -->
+      <div class="member-panel" id="panel-4">
+        <div class="mp-header">
+          <div class="mp-avatar" style="background:#059669"><i class="fas fa-link"></i></div>
+          <div class="mp-identity">
+            <h3>M.H.S. Akther</h3>
+            <span class="mp-id">IT22590312</span>
+            <span class="mp-role">Lead Researcher: Blockchain & Attendance</span>
+          </div>
+          <div class="mp-overall">
+            <div class="overall-ring" data-progress="82">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32" /><circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="36" /></svg>
+              <span>82%</span>
+            </div>
+            <small>Overall Progress</small>
+          </div>
+        </div>
+        <div class="mp-body">
+          <div class="mp-col">
+            <h4><i class="fas fa-check-double"></i> Completed Tasks</h4>
+            <ul class="task-list">
+              <li class="done"><i class="fas fa-check"></i> Hybrid blockchain framework development</li>
+              <li class="done"><i class="fas fa-check"></i> OSRM-based matchmaking algorithm</li>
+              <li class="done"><i class="fas fa-check"></i> Segmented polyline analysis implementation</li>
+              <li class="done"><i class="fas fa-check"></i> SHA-256 hash chaining to Ethereum (Sepolia)</li>
+            </ul>
+            <h4><i class="fas fa-trophy"></i> Achievements</h4>
+            <div class="achievement-cards">
+              <div class="ach"><i class="fas fa-star"></i> 100% tamper-detection rate in simulation</div>
+              <div class="ach"><i class="fas fa-star"></i> 26% improvement in driver-student matching</div>
+              <div class="ach"><i class="fas fa-star"></i> 18ms average polyline computation time</div>
+            </div>
+          </div>
+          <div class="mp-col">
+            <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
+            <div class="progress-bars">
+              <div class="prog-item">
+                <div class="prog-label"><span>Blockchain Architecture</span><span>90%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:90%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>RFID Attendance</span><span>85%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:85%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Polyline Analysis</span><span>88%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:88%"></div></div>
+              </div>
+              <div class="prog-item">
+                <div class="prog-label"><span>Fleet Scaling</span><span>60%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="width:60%"></div></div>
+              </div>
+            </div>
+            <h4><i class="fas fa-flag"></i> Next Milestones</h4>
+            <ul class="task-list">
+              <li><i class="fas fa-clock"></i> Scale MongoDB schema for provincial fleet sizes</li>
+              <li><i class="fas fa-clock"></i> Real-world RFID scan batch testing (500+)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section id="documents" class="section docs-section">
+  <div class="container">
+    <div class="section-label reveal">Repository</div>
+    <h2 class="section-title reveal">Document Archive</h2>
+
+    <div class="docs-grid">
+      <div class="doc-category reveal">
+        <div class="doc-cat-header"><i class="fas fa-file-powerpoint"></i> Presentations</div>
+        <div class="doc-items">
+          <a href="documents/proposal_presentation.pptx" class="doc-item">
+            <i class="fas fa-file-powerpoint"></i>
+            <div>
+              <strong>Proposal Presentation</strong>
+              <small>Initial research proposal slides</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/progress_presentation_1.pptx" class="doc-item">
+            <i class="fas fa-file-powerpoint"></i>
+            <div>
+              <strong>Progress Presentation 1</strong>
+              <small>Phase 1-2 results and findings</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/progress_presentation_2.pptx" class="doc-item">
+            <i class="fas fa-file-powerpoint"></i>
+            <div>
+              <strong>Progress Presentation 2</strong>
+              <small>Phase 3-4 results and innovation</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/final_presentation.pptx" class="doc-item pending">
+            <i class="fas fa-file-powerpoint"></i>
+            <div>
+              <strong>Final Presentation</strong>
+              <small>Pending – August 2026</small>
+            </div>
+            <i class="fas fa-clock dl-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-category reveal">
+        <div class="doc-cat-header"><i class="fas fa-file-pdf"></i> Research Documents</div>
+        <div class="doc-items">
+          <a href="documents/proposal_document.pdf" class="doc-item">
+            <i class="fas fa-file-pdf"></i>
+            <div>
+              <strong>Research Proposal</strong>
+              <small>SISURAKSHA initial research proposal</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/project_charter.pdf" class="doc-item">
+            <i class="fas fa-file-pdf"></i>
+            <div>
+              <strong>Project Charter</strong>
+              <small>Scope, objectives, and agreements</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/literature_survey.pdf" class="doc-item">
+            <i class="fas fa-file-pdf"></i>
+            <div>
+              <strong>Literature Survey</strong>
+              <small>Edge vs. Cloud computing for biometrics</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-category reveal">
+        <div class="doc-cat-header"><i class="fas fa-graduation-cap"></i> Dissertations</div>
+        <div class="doc-items">
+          <a href="documents/dissertation_IT22606624.pdf" class="doc-item">
+            <i class="fas fa-file-pdf"></i>
+            <div>
+              <strong>Dissertation – Thanaweera (IT22606624)</strong>
+              <small>Accident & Window Safety Module</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/dissertation_IT22610102.pdf" class="doc-item">
+            <i class="fas fa-file-pdf"></i>
+            <div>
+              <strong>Dissertation – Pinto (IT22610102)</strong>
+              <small>Footboard Safety & Driver Monitoring</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/dissertation_IT22600134.pdf" class="doc-item">
+            <i class="fas fa-file-pdf"></i>
+            <div>
+              <strong>Dissertation – Kumara (IT22600134)</strong>
+              <small>Emergency Egress & Edge-AI Biometrics</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/dissertation_IT22590312.pdf" class="doc-item">
+            <i class="fas fa-file-pdf"></i>
+            <div>
+              <strong>Dissertation – Akther (IT22590312)</strong>
+              <small>Blockchain Attendance & Polyline Analysis</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-category reveal">
+        <div class="doc-cat-header"><i class="fas fa-code"></i> Technical Documentation</div>
+        <div class="doc-items">
+          <a href="documents/esp32_pin_mapping.pdf" class="doc-item">
+            <i class="fas fa-file-code"></i>
+            <div>
+              <strong>ESP32 Pin Mapping</strong>
+              <small>Hardware connection documentation</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/blockchain_schema.pdf" class="doc-item">
+            <i class="fas fa-file-code"></i>
+            <div>
+              <strong>Hybrid Blockchain Schema</strong>
+              <small>MongoDB document schema design</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/osrm_polyline_algorithm.pdf" class="doc-item">
+            <i class="fas fa-file-code"></i>
+            <div>
+              <strong>OSRM Polyline Algorithm</strong>
+              <small>Routing algorithm technical spec</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+          <a href="documents/arduino_firmware.zip" class="doc-item">
+            <i class="fas fa-file-zipper"></i>
+            <div>
+              <strong>Arduino Source Code</strong>
+              <small>ESP32 firmware source files</small>
+            </div>
+            <i class="fas fa-download dl-icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-label reveal">Get In Touch</div>
+    <h2 class="section-title reveal">Contact Us</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-card">
+          <i class="fas fa-university"></i>
+          <div>
+            <strong>Institution</strong>
+            <p>Sri Lanka Institute of Information Technology (SLIIT)</p>
+            <small>Department of Information Technology</small>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Project Email</strong>
+            <p><a href="mailto:info.sisuraksha@sliit.lk">info.sisuraksha@sliit.lk</a></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-chalkboard-user"></i>
+          <div>
+            <strong>Supervisors</strong>
+            <p>Ms. Thisara Shyamalee</p>
+            <p>Ms. Osuri Dunuwila</p>
+            <small>Department of IT, SLIIT</small>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-people-group"></i>
+          <div>
+            <strong>Research Group</strong>
+            <p>Group 25-26J-282</p>
+            <small>Undergraduate Research Project · 2025/26</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Research inquiry, collaboration, etc." />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div id="form-success" class="form-success" style="display:none">
+            <i class="fas fa-check-circle"></i> Message sent successfully!
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <i class="fas fa-shield-halved"></i>
+      <span>SISURAKSHA</span>
+    </div>
+    <p class="footer-tagline">Protecting the Future of Sri Lanka</p>
+    <p class="footer-copy">© 2025–2026 Research Group 25-26J-282 · SLIIT · Department of Information Technology</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
