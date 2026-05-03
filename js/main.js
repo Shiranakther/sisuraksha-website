@@ -384,3 +384,70 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// ── MILESTONE DROPDOWN ────────────────────────────────────────────────
+const msIcons = ["fa-chalkboard","fa-file-lines","fa-person-chalkboard","fa-chalkboard-user","fa-book","fa-users-rectangle","fa-flag-checkered","fa-graduation-cap","fa-globe","fa-scroll","fa-list-check","fa-book-journal-whills"];
+const msLabels = ["Proposal Presentation","Proposal Report","Progress Presentation-1 (50%)","Progress Presentation-2 (90%)","Final Report","Final Report (group)","Final presentation","Viva","Website","Research paper","Check Lists","Logbook"];
+
+function toggleMsDropdown() {
+  document.getElementById('msDropdown').classList.toggle('open');
+}
+
+// Close when clicking outside
+document.addEventListener('click', (e) => {
+  const dd = document.getElementById('msDropdown');
+  if (dd && !dd.contains(e.target)) dd.classList.remove('open');
+});
+
+function selectMilestone(num, optionEl) {
+  // Update dropdown label + icon
+  const icon = document.querySelector('.ms-selected-icon i');
+  const text = document.querySelector('.ms-selected-text');
+  if (icon) icon.className = `fas ${msIcons[num - 1]}`;
+  if (text) text.textContent = msLabels[num - 1];
+
+  // Update active option highlight
+  document.querySelectorAll('.ms-option').forEach((opt, i) => {
+    opt.classList.toggle('active', i + 1 === num);
+  });
+
+  // Close dropdown
+  document.getElementById('msDropdown').classList.remove('open');
+
+  // Switch visible panel
+  document.querySelectorAll('.ms-panel').forEach(p => p.classList.remove('active'));
+  const panel = document.getElementById('ms-panel-' + num);
+  if (panel) {
+    panel.classList.add('active');
+    // Re-animate criteria bars
+    setTimeout(() => {
+      panel.querySelectorAll('.mc-bar').forEach(bar => {
+        const w = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => { bar.style.width = w; }, 50);
+      });
+    }, 60);
+  }
+
+  // Highlight matching summary table row
+  document.querySelectorAll('.ms-table tbody tr').forEach((row, i) => {
+    row.style.background = (i + 1 === num) ? 'rgba(255,192,0,0.08)' : '';
+  });
+}
+
+// Animate criteria bars on first scroll into view
+const msObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.mc-bar').forEach(bar => {
+        const w = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => { bar.style.width = w; }, 100);
+      });
+      msObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const firstPanel = document.getElementById('ms-panel-1');
+if (firstPanel) msObserver.observe(firstPanel);
