@@ -253,3 +253,105 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ── CUSTOM CURSOR ANIMATION ───────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  // Only init on non-touch devices
+  if (!window.matchMedia("(pointer: fine)").matches) return;
+
+  const cursor = document.getElementById('custom-cursor');
+  if (!cursor) return;
+
+  const smokeContainer = document.createElement('div');
+  smokeContainer.className = 'cursor-smoke-container';
+  document.body.appendChild(smokeContainer);
+
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let cursorX = mouseX;
+  let cursorY = mouseY;
+  let lastX = mouseX;
+  let isHovering = false;
+  let moveTimer;
+
+  // Track mouse movement
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    // Flip logic based on X direction
+    if (mouseX < lastX - 2) {
+      cursor.classList.add('flip');
+    } else if (mouseX > lastX + 2) {
+      cursor.classList.remove('flip');
+    }
+    lastX = mouseX;
+
+    // Bounce animation class
+    cursor.classList.add('moving');
+    clearTimeout(moveTimer);
+    moveTimer = setTimeout(() => cursor.classList.remove('moving'), 150);
+  });
+
+  // Render loop using requestAnimationFrame
+  function renderCursor() {
+    // Easing for smooth follow (0.2)
+    cursorX += (mouseX - cursorX) * 0.2;
+    cursorY += (mouseY - cursorY) * 0.2;
+
+    cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+
+    // Spawn smoke particles when moving
+    if (cursor.classList.contains('moving') && Math.random() > 0.6) {
+      createSmokeParticle(cursorX, cursorY, cursor.classList.contains('flip'));
+    }
+
+    requestAnimationFrame(renderCursor);
+  }
+  requestAnimationFrame(renderCursor);
+
+  function createSmokeParticle(x, y, isFlipped) {
+    const particle = document.createElement('div');
+    particle.className = 'smoke-particle';
+
+    // Offset smoke behind the bus
+    const offset = isFlipped ? 18 : -18;
+    particle.style.left = (x + offset) + 'px';
+    particle.style.top = (y + 8) + 'px';
+
+    // Exhaust on interactive hover (make it slightly more opaque/glowy)
+    if (isHovering) {
+      particle.style.background = 'rgba(60, 60, 60, 0.8)';
+      particle.style.boxShadow = '0 0 6px rgba(60, 60, 60, 0.4)';
+    }
+
+    smokeContainer.appendChild(particle);
+
+    // Fade out and move up slightly
+    requestAnimationFrame(() => {
+      particle.classList.add('fade');
+    });
+
+    // Clean up DOM
+    setTimeout(() => {
+      particle.remove();
+    }, 500);
+  }
+
+  // Interactive Hover State Detection (Event Delegation)
+  document.addEventListener('mouseover', (e) => {
+    const interactive = e.target.closest('a, button, input, textarea, select, [onclick], .team-card, .feature-card, .doc-item, .sup-card');
+    if (interactive) {
+      cursor.classList.add('interactive');
+      isHovering = true;
+    }
+  });
+
+  document.addEventListener('mouseout', (e) => {
+    const interactive = e.target.closest('a, button, input, textarea, select, [onclick], .team-card, .feature-card, .doc-item, .sup-card');
+    if (interactive) {
+      cursor.classList.remove('interactive');
+      isHovering = false;
+    }
+  });
+});
