@@ -158,19 +158,48 @@ function showMember(num) {
 }
 
 // ── CONTACT FORM ──────────────────────────────────────────────────────
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
   e.preventDefault();
+  const form = e.target;
   const successEl = document.getElementById('form-success');
-  const btn = e.target.querySelector('button[type="submit"]');
+  const btn = form.querySelector('button[type="submit"]');
+  
+  const originalBtnText = btn.innerHTML;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   btn.disabled = true;
-  setTimeout(() => {
-    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+    
+    const data = await response.json();
+    
+    if (data.success) {
+      btn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully';
+      successEl.style.display = 'flex';
+      form.reset();
+      
+      setTimeout(() => { 
+        successEl.style.display = 'none'; 
+        btn.innerHTML = originalBtnText;
+        btn.disabled = false;
+      }, 5000);
+    } else {
+      throw new Error(data.message || 'Submission failed');
+    }
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error. Try Again.';
     btn.disabled = false;
-    successEl.style.display = 'flex';
-    e.target.reset();
-    setTimeout(() => { successEl.style.display = 'none'; }, 5000);
-  }, 1500);
+    
+    setTimeout(() => {
+      btn.innerHTML = originalBtnText;
+    }, 3000);
+  }
 }
 
 // ── SMOOTH SCROLL (override for nav links) ────────────────────────────
