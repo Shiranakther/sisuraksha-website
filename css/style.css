@@ -783,12 +783,19 @@ img { max-width: 100%; display: block; }
   padding: 1.2rem 1.5rem;
   box-shadow: var(--shadow-sm);
   flex: 1; min-width: 240px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.sup-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(255,192,0,0.3);
 }
 .sup-avatar {
-  width: 48px; height: 48px;
+  width: 80px; height: 80px;
   background: rgba(0,0,139,0.08);
   color: var(--navy);
-  border-radius: 12px;
+  border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.2rem; flex-shrink: 0;
 }

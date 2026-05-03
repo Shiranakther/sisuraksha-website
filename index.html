@@ -574,12 +574,34 @@
         <h3 class="sub-title">Supervisors</h3>
         <div class="supervisor-cards">
           <div class="sup-card">
-            <div class="sup-avatar"><i class="fas fa-chalkboard-teacher"></i></div>
-            <div><strong>Ms. Thisara Shyamalee</strong><br /><small>Project Supervisor · SLIIT</small></div>
+            <div class="sup-avatar" style="overflow: hidden;">
+              <img src="images/sup.jpeg" alt="Ms. Thisara Shyamalee"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+              <div
+                style="color: var(--gold); font-family: var(--font-heading); font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.3rem;">
+                Project Supervisor</div>
+              <strong>Ms. Thisara Shyamalee</strong><br />
+              <small>Lecturer</small><br />
+              <small>Department of First Year Division</small><br />
+              <small>Faculty of Computing, SLIIT</small>
+            </div>
           </div>
           <div class="sup-card">
-            <div class="sup-avatar"><i class="fas fa-chalkboard-teacher"></i></div>
-            <div><strong>Ms. Osuri Dunuwila</strong><br /><small>Project Co-Supervisor · SLIIT</small></div>
+            <div class="sup-avatar" style="overflow: hidden;">
+              <img src="images/co-sup.jpeg" alt="Ms. Osuri Dunuwila"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+              <div
+                style="color: var(--gold); font-family: var(--font-heading); font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.3rem;">
+                Project Co-Supervisor</div>
+              <strong>Ms. Osuri Dunuwila</strong><br />
+              <small>Assistant Lecturer</small><br />
+              <small>Department of First Year Division</small><br />
+              <small>Faculty of Computing, SLIIT</small>
+            </div>
           </div>
         </div>
       </div>
@@ -593,29 +615,29 @@
       <h2 class="section-title reveal">Member Progress</h2>
 
       <div class="progress-tabs reveal">
-        <button class="ptab active" onclick="showMember(1)"><i class="fas fa-shield-halved"></i> Shameera</button>
+        <button class="ptab active" onclick="showMember(4)"><i class="fas fa-link"></i> Akther</button>
         <button class="ptab" onclick="showMember(2)"><i class="fas fa-eye"></i> Pinto</button>
+        <button class="ptab" onclick="showMember(1)"><i class="fas fa-shield-halved"></i> Shameera</button>
         <button class="ptab" onclick="showMember(3)"><i class="fas fa-fingerprint"></i> Kumara</button>
-        <button class="ptab" onclick="showMember(4)"><i class="fas fa-link"></i> Akther</button>
       </div>
 
       <div id="member-panels">
-        <!-- MEMBER 1 -->
-        <div class="member-panel active" id="panel-1">
+        <!-- MEMBER 4 -->
+        <div class="member-panel active" id="panel-4">
           <div class="mp-header">
-            <div class="mp-avatar"><i class="fas fa-shield-halved"></i></div>
+            <div class="mp-avatar" style="background:#059669"><i class="fas fa-link"></i></div>
             <div class="mp-identity">
-              <h3>T.A.P.K. Shameera</h3>
-              <span class="mp-id">IT22606624</span>
-              <span class="mp-role">Lead Researcher: Accident & Window Safety</span>
+              <h3>M.H.S. Akther</h3>
+              <span class="mp-id">IT22590312</span>
+              <span class="mp-role">Lead Researcher: Blockchain & Attendance</span>
             </div>
             <div class="mp-overall">
-              <div class="overall-ring" data-progress="80">
+              <div class="overall-ring" data-progress="100">
                 <svg viewBox="0 0 80 80">
                   <circle cx="40" cy="40" r="32" />
-                  <circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="40" />
+                  <circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="0" />
                 </svg>
-                <span>80%</span>
+                <span>100%</span>
               </div>
               <small>Overall Progress</small>
             </div>
@@ -624,52 +646,50 @@
             <div class="mp-col">
               <h4><i class="fas fa-check-double"></i> Completed Tasks</h4>
               <ul class="task-list">
-                <li class="done"><i class="fas fa-check"></i> Sensor selection (MPU9250, MQ-2)</li>
-                <li class="done"><i class="fas fa-check"></i> Accident detection logic implementation</li>
-                <li class="done"><i class="fas fa-check"></i> YOLOv8 model training for window safety</li>
-                <li class="done"><i class="fas fa-check"></i> 60-second driver verification mechanism</li>
+                <li class="done"><i class="fas fa-check"></i> Hybrid blockchain framework development</li>
+                <li class="done"><i class="fas fa-check"></i> OSRM-based matchmaking algorithm</li>
+                <li class="done"><i class="fas fa-check"></i> Segmented polyline analysis implementation</li>
+                <li class="done"><i class="fas fa-check"></i> SHA-256 hash chaining to Ethereum (Sepolia)</li>
               </ul>
               <h4><i class="fas fa-trophy"></i> Achievements</h4>
               <div class="achievement-cards">
-                <div class="ach"><i class="fas fa-star"></i> Integrated MPU9250 + MQ2 for comprehensive hazard mapping
-                </div>
-                <div class="ach"><i class="fas fa-star"></i> 60-second false-alert prevention system deployed</div>
+                <div class="ach"><i class="fas fa-star"></i> 100% tamper-detection rate in simulation</div>
+                <div class="ach"><i class="fas fa-star"></i> 26% improvement in driver-student matching</div>
+                <div class="ach"><i class="fas fa-star"></i> 18ms average polyline computation time</div>
               </div>
             </div>
             <div class="mp-col">
-              <h4><i class="fas fa-spinner"></i> Current Work</h4>
-              <div class="current-task">Optimizing YOLOv8 confidence thresholds for varied lighting conditions</div>
               <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
               <div class="progress-bars">
                 <div class="prog-item">
-                  <div class="prog-label"><span>Sensor Integration</span><span>95%</span></div>
+                  <div class="prog-label"><span>Blockchain Architecture</span><span>100%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:95%"></div>
+                    <div class="prog-fill" style="width:100%"></div>
                   </div>
                 </div>
                 <div class="prog-item">
-                  <div class="prog-label"><span>Accident Detection</span><span>90%</span></div>
+                  <div class="prog-label"><span>RFID Attendance</span><span>100%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:90%"></div>
+                    <div class="prog-fill" style="width:100%"></div>
                   </div>
                 </div>
                 <div class="prog-item">
-                  <div class="prog-label"><span>Window Safety ML</span><span>75%</span></div>
+                  <div class="prog-label"><span>Polyline Analysis</span><span>100%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:75%"></div>
+                    <div class="prog-fill" style="width:100%"></div>
                   </div>
                 </div>
                 <div class="prog-item">
-                  <div class="prog-label"><span>Adaptive Thresholds</span><span>40%</span></div>
+                  <div class="prog-label"><span>Fleet Scaling</span><span>98%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:40%"></div>
+                    <div class="prog-fill" style="width:98%"></div>
                   </div>
                 </div>
               </div>
               <h4><i class="fas fa-flag"></i> Next Milestones</h4>
               <ul class="task-list">
-                <li><i class="fas fa-clock"></i> Adaptive threshold learning with real road data</li>
-                <li><i class="fas fa-clock"></i> Extended field testing in varied conditions</li>
+                <li><i class="fas fa-clock"></i> Scale MongoDB schema for provincial fleet sizes</li>
+                <li><i class="fas fa-clock"></i> Real-world RFID scan batch testing (500+)</li>
               </ul>
             </div>
           </div>
@@ -685,12 +705,12 @@
               <span class="mp-role">Lead Researcher: Driver & Footboard Monitoring</span>
             </div>
             <div class="mp-overall">
-              <div class="overall-ring" data-progress="75">
+              <div class="overall-ring" data-progress="97">
                 <svg viewBox="0 0 80 80">
                   <circle cx="40" cy="40" r="32" />
-                  <circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="50" />
+                  <circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="6" />
                 </svg>
-                <span>75%</span>
+                <span>97%</span>
               </div>
               <small>Overall Progress</small>
             </div>
@@ -717,27 +737,27 @@
               <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
               <div class="progress-bars">
                 <div class="prog-item">
-                  <div class="prog-label"><span>Footboard Detection</span><span>90%</span></div>
+                  <div class="prog-label"><span>Footboard Detection</span><span>98%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:90%"></div>
+                    <div class="prog-fill" style="width:98%"></div>
                   </div>
                 </div>
                 <div class="prog-item">
-                  <div class="prog-label"><span>State Machine</span><span>85%</span></div>
+                  <div class="prog-label"><span>State Machine</span><span>99%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:85%"></div>
+                    <div class="prog-fill" style="width:99%"></div>
                   </div>
                 </div>
                 <div class="prog-item">
-                  <div class="prog-label"><span>Driver Monitoring</span><span>60%</span></div>
+                  <div class="prog-label"><span>Driver Monitoring</span><span>95%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:60%"></div>
+                    <div class="prog-fill" style="width:95%"></div>
                   </div>
                 </div>
                 <div class="prog-item">
-                  <div class="prog-label"><span>Vibration Filtering</span><span>50%</span></div>
+                  <div class="prog-label"><span>Vibration Filtering</span><span>96%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:50%"></div>
+                    <div class="prog-fill" style="width:96%"></div>
                   </div>
                 </div>
               </div>
@@ -745,6 +765,81 @@
               <ul class="task-list">
                 <li><i class="fas fa-clock"></i> Resolve driver monitoring stability in high-vibration</li>
                 <li><i class="fas fa-clock"></i> Integrate fatigue detection with safety state machine</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- MEMBER 1 -->
+        <div class="member-panel" id="panel-1">
+          <div class="mp-header">
+            <div class="mp-avatar"><i class="fas fa-shield-halved"></i></div>
+            <div class="mp-identity">
+              <h3>T.A.P.K. Shameera</h3>
+              <span class="mp-id">IT22606624</span>
+              <span class="mp-role">Lead Researcher: Accident & Window Safety</span>
+            </div>
+            <div class="mp-overall">
+              <div class="overall-ring" data-progress="98">
+                <svg viewBox="0 0 80 80">
+                  <circle cx="40" cy="40" r="32" />
+                  <circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="4" />
+                </svg>
+                <span>98%</span>
+              </div>
+              <small>Overall Progress</small>
+            </div>
+          </div>
+          <div class="mp-body">
+            <div class="mp-col">
+              <h4><i class="fas fa-check-double"></i> Completed Tasks</h4>
+              <ul class="task-list">
+                <li class="done"><i class="fas fa-check"></i> Sensor selection (MPU9250, MQ-2)</li>
+                <li class="done"><i class="fas fa-check"></i> Accident detection logic implementation</li>
+                <li class="done"><i class="fas fa-check"></i> YOLOv8 model training for window safety</li>
+                <li class="done"><i class="fas fa-check"></i> 60-second driver verification mechanism</li>
+              </ul>
+              <h4><i class="fas fa-trophy"></i> Achievements</h4>
+              <div class="achievement-cards">
+                <div class="ach"><i class="fas fa-star"></i> Integrated MPU9250 + MQ2 for comprehensive hazard mapping
+                </div>
+                <div class="ach"><i class="fas fa-star"></i> 60-second false-alert prevention system deployed</div>
+              </div>
+            </div>
+            <div class="mp-col">
+              <h4><i class="fas fa-spinner"></i> Current Work</h4>
+              <div class="current-task">Optimizing YOLOv8 confidence thresholds for varied lighting conditions</div>
+              <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
+              <div class="progress-bars">
+                <div class="prog-item">
+                  <div class="prog-label"><span>Sensor Integration</span><span>100%</span></div>
+                  <div class="prog-bar">
+                    <div class="prog-fill" style="width:100%"></div>
+                  </div>
+                </div>
+                <div class="prog-item">
+                  <div class="prog-label"><span>Accident Detection</span><span>98%</span></div>
+                  <div class="prog-bar">
+                    <div class="prog-fill" style="width:98%"></div>
+                  </div>
+                </div>
+                <div class="prog-item">
+                  <div class="prog-label"><span>Window Safety ML</span><span>97%</span></div>
+                  <div class="prog-bar">
+                    <div class="prog-fill" style="width:97%"></div>
+                  </div>
+                </div>
+                <div class="prog-item">
+                  <div class="prog-label"><span>Adaptive Thresholds</span><span>96%</span></div>
+                  <div class="prog-bar">
+                    <div class="prog-fill" style="width:96%"></div>
+                  </div>
+                </div>
+              </div>
+              <h4><i class="fas fa-flag"></i> Next Milestones</h4>
+              <ul class="task-list">
+                <li><i class="fas fa-clock"></i> Adaptive threshold learning with real road data</li>
+                <li><i class="fas fa-clock"></i> Extended field testing in varied conditions</li>
               </ul>
             </div>
           </div>
@@ -760,12 +855,12 @@
               <span class="mp-role">Lead Researcher: Egress & Biometrics</span>
             </div>
             <div class="mp-overall">
-              <div class="overall-ring" data-progress="85">
+              <div class="overall-ring" data-progress="99">
                 <svg viewBox="0 0 80 80">
                   <circle cx="40" cy="40" r="32" />
-                  <circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="30" />
+                  <circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="2" />
                 </svg>
-                <span>85%</span>
+                <span>99%</span>
               </div>
               <small>Overall Progress</small>
             </div>
@@ -777,7 +872,7 @@
                 <li class="done"><i class="fas fa-check"></i> Solenoid-actuated door system prototyping</li>
                 <li class="done"><i class="fas fa-check"></i> MobileFaceNet fine-tuning</li>
                 <li class="done"><i class="fas fa-check"></i> CA-AEES dual-verification interlock</li>
-                <li class="done"><i class="fas fa-check"></i> PDPA compliance – zero cloud transmission</li>
+                <li class="done"><i class="fas fa-check"></i> PDPA compliance with zero cloud transmission</li>
               </ul>
               <h4><i class="fas fa-trophy"></i> Achievements</h4>
               <div class="achievement-cards">
@@ -790,15 +885,15 @@
               <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
               <div class="progress-bars">
                 <div class="prog-item">
-                  <div class="prog-label"><span>Emergency Egress</span><span>95%</span></div>
+                  <div class="prog-label"><span>Emergency Egress</span><span>100%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:95%"></div>
+                    <div class="prog-fill" style="width:100%"></div>
                   </div>
                 </div>
                 <div class="prog-item">
-                  <div class="prog-label"><span>Face Recognition</span><span>90%</span></div>
+                  <div class="prog-label"><span>Face Recognition</span><span>98%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:90%"></div>
+                    <div class="prog-fill" style="width:98%"></div>
                   </div>
                 </div>
                 <div class="prog-item">
@@ -808,9 +903,9 @@
                   </div>
                 </div>
                 <div class="prog-item">
-                  <div class="prog-label"><span>Field Trials</span><span>50%</span></div>
+                  <div class="prog-label"><span>Field Trials</span><span>97%</span></div>
                   <div class="prog-bar">
-                    <div class="prog-fill" style="width:50%"></div>
+                    <div class="prog-fill" style="width:97%"></div>
                   </div>
                 </div>
               </div>
@@ -818,79 +913,6 @@
               <ul class="task-list">
                 <li><i class="fas fa-clock"></i> Extended field trials in varied weather</li>
                 <li><i class="fas fa-clock"></i> Demographic validation across student datasets</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- MEMBER 4 -->
-        <div class="member-panel" id="panel-4">
-          <div class="mp-header">
-            <div class="mp-avatar" style="background:#059669"><i class="fas fa-link"></i></div>
-            <div class="mp-identity">
-              <h3>M.H.S. Akther</h3>
-              <span class="mp-id">IT22590312</span>
-              <span class="mp-role">Lead Researcher: Blockchain & Attendance</span>
-            </div>
-            <div class="mp-overall">
-              <div class="overall-ring" data-progress="82">
-                <svg viewBox="0 0 80 80">
-                  <circle cx="40" cy="40" r="32" />
-                  <circle class="progress-ring" cx="40" cy="40" r="32" stroke-dasharray="201" stroke-dashoffset="36" />
-                </svg>
-                <span>82%</span>
-              </div>
-              <small>Overall Progress</small>
-            </div>
-          </div>
-          <div class="mp-body">
-            <div class="mp-col">
-              <h4><i class="fas fa-check-double"></i> Completed Tasks</h4>
-              <ul class="task-list">
-                <li class="done"><i class="fas fa-check"></i> Hybrid blockchain framework development</li>
-                <li class="done"><i class="fas fa-check"></i> OSRM-based matchmaking algorithm</li>
-                <li class="done"><i class="fas fa-check"></i> Segmented polyline analysis implementation</li>
-                <li class="done"><i class="fas fa-check"></i> SHA-256 hash chaining to Ethereum (Sepolia)</li>
-              </ul>
-              <h4><i class="fas fa-trophy"></i> Achievements</h4>
-              <div class="achievement-cards">
-                <div class="ach"><i class="fas fa-star"></i> 100% tamper-detection rate in simulation</div>
-                <div class="ach"><i class="fas fa-star"></i> 26% improvement in driver-student matching</div>
-                <div class="ach"><i class="fas fa-star"></i> 18ms average polyline computation time</div>
-              </div>
-            </div>
-            <div class="mp-col">
-              <h4><i class="fas fa-chart-line"></i> Module Progress</h4>
-              <div class="progress-bars">
-                <div class="prog-item">
-                  <div class="prog-label"><span>Blockchain Architecture</span><span>90%</span></div>
-                  <div class="prog-bar">
-                    <div class="prog-fill" style="width:90%"></div>
-                  </div>
-                </div>
-                <div class="prog-item">
-                  <div class="prog-label"><span>RFID Attendance</span><span>85%</span></div>
-                  <div class="prog-bar">
-                    <div class="prog-fill" style="width:85%"></div>
-                  </div>
-                </div>
-                <div class="prog-item">
-                  <div class="prog-label"><span>Polyline Analysis</span><span>88%</span></div>
-                  <div class="prog-bar">
-                    <div class="prog-fill" style="width:88%"></div>
-                  </div>
-                </div>
-                <div class="prog-item">
-                  <div class="prog-label"><span>Fleet Scaling</span><span>60%</span></div>
-                  <div class="prog-bar">
-                    <div class="prog-fill" style="width:60%"></div>
-                  </div>
-                </div>
-              </div>
-              <h4><i class="fas fa-flag"></i> Next Milestones</h4>
-              <ul class="task-list">
-                <li><i class="fas fa-clock"></i> Scale MongoDB schema for provincial fleet sizes</li>
-                <li><i class="fas fa-clock"></i> Real-world RFID scan batch testing (500+)</li>
               </ul>
             </div>
           </div>
@@ -1080,9 +1102,9 @@
             <i class="fas fa-chalkboard-user"></i>
             <div>
               <strong>Supervisors</strong>
-              <p>Ms. Thisara Shyamalee</p>
-              <p>Ms. Osuri Dunuwila</p>
-              <small>Department of IT, SLIIT</small>
+              <p>Ms. Thisara Shyamalee · Lecturer</p>
+              <p>Ms. Osuri Dunuwila · Assistant Lecturer</p>
+              <small>Department of First Year Division · SLIIT</small>
             </div>
           </div>
           <div class="contact-card">

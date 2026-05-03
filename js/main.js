@@ -135,8 +135,9 @@ document.querySelectorAll('.member-panel').forEach(panel => {
 // ── MEMBER PROGRESS TABS ──────────────────────────────────────────────
 function showMember(num) {
   // Update tabs
-  document.querySelectorAll('.ptab').forEach((tab, i) => {
-    tab.classList.toggle('active', i + 1 === num);
+  document.querySelectorAll('.ptab').forEach((tab) => {
+    const isTarget = tab.getAttribute('onclick').includes('(' + num + ')');
+    tab.classList.toggle('active', isTarget);
   });
   // Update panels
   document.querySelectorAll('.member-panel').forEach(panel => {
@@ -242,10 +243,10 @@ if (timeline) timelineObserver.observe(timeline);
 
 // ── PAGE INIT ─────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize first member panel progress bars
-  const panel1 = document.getElementById('panel-1');
-  if (panel1) {
-    panel1.querySelectorAll('.prog-fill').forEach(bar => {
+  // Initialize default member panel progress bars (Member 4 - Akther)
+  const defaultPanel = document.getElementById('panel-4');
+  if (defaultPanel) {
+    defaultPanel.querySelectorAll('.prog-fill').forEach(bar => {
       const w = bar.style.width;
       bar.style.width = '0';
       setTimeout(() => { bar.style.width = w; }, 500);
