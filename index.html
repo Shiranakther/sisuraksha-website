@@ -15,7 +15,12 @@
 <!-- LOADER -->
 <div id="loader">
   <div class="loader-inner">
-    <div class="loader-logo">SISURAKSHA</div>
+    <div class="loader-logo">
+      <div style="margin: 0 auto 1.5rem; text-align: center; animation: pulse 1.5s ease-in-out infinite;">
+        <img src="images/logo.png" alt="Logo" style="height: 100px; width: auto; filter: drop-shadow(0 0 15px rgba(255,192,0,0.2));">
+      </div>
+      <div style="font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); letter-spacing: 0.12em;">SISURAKSHA</div>
+    </div>
     <div class="loader-bar"><div class="loader-fill"></div></div>
     <div class="loader-text">Initializing Safety Platform...</div>
   </div>
@@ -25,7 +30,7 @@
 <nav id="navbar">
   <div class="nav-container">
     <a href="#home" class="nav-brand">
-      <span class="brand-icon"><i class="fas fa-shield-halved"></i></span>
+      <img src="images/logo.png" alt="Logo" style="height: 42px; width: auto; margin-right: 10px; filter: drop-shadow(0 0 8px rgba(255,192,0,0.2));">
       <span class="brand-text">SISURAKSHA</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -438,25 +443,25 @@
     <h2 class="section-title reveal">Research Team</h2>
     <p class="section-desc reveal">Group 25-26J-282 · Sri Lanka Institute of Information Technology</p>
     <div class="team-grid">
-      <div class="team-card reveal" data-member="1">
+      <div class="team-card reveal" data-member="4">
         <div class="team-avatar">
-          <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          <img src="images/shiran.jpeg" alt="Akther" class="avatar-placeholder" style="object-fit: cover;" />
           <div class="avatar-ring"></div>
         </div>
         <div class="team-info">
-          <h3>Thanaweera A.P.K.S.</h3>
-          <div class="member-id">IT22606624</div>
-          <div class="team-role">Lead – Accident & Window Safety</div>
-          <p class="team-desc">Multi-sensor accident/hazard detection & YOLOv8-based student behavior monitoring.</p>
+          <h3>M.H.S. Akther</h3>
+          <div class="member-id">IT22590312</div>
+          <div class="team-role">Lead – Blockchain & Attendance</div>
+          <p class="team-desc">Hybrid blockchain RFID attendance and Segmented Polyline Analysis for routing.</p>
           <div class="team-tags">
-            <span>ESP32</span><span>YOLOv8</span><span>MPU9250</span>
+            <span>Ethereum</span><span>OSRM</span><span>MongoDB</span>
           </div>
-          <a href="#progress" class="member-link" onclick="showMember(1)">View Progress <i class="fas fa-arrow-right"></i></a>
+          <a href="#progress" class="member-link" onclick="showMember(4)">View Progress <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="team-card reveal" data-member="2">
         <div class="team-avatar">
-          <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          <img src="images/ishan.jpg" alt="Pinto" class="avatar-placeholder" style="object-fit: cover;" />
           <div class="avatar-ring"></div>
         </div>
         <div class="team-info">
@@ -472,7 +477,7 @@
       </div>
       <div class="team-card reveal" data-member="3">
         <div class="team-avatar">
-          <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          <img src="images/dilshan .png" alt="Kumara" class="avatar-placeholder" style="object-fit: cover;" />
           <div class="avatar-ring"></div>
         </div>
         <div class="team-info">
@@ -486,20 +491,20 @@
           <a href="#progress" class="member-link" onclick="showMember(3)">View Progress <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      <div class="team-card reveal" data-member="4">
+      <div class="team-card reveal" data-member="1">
         <div class="team-avatar">
-          <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+          <img src="images/kasun.jpeg" alt="Thanaweera" class="avatar-placeholder" style="object-fit: cover;" />
           <div class="avatar-ring"></div>
         </div>
         <div class="team-info">
-          <h3>M.H.S. Akther</h3>
-          <div class="member-id">IT22590312</div>
-          <div class="team-role">Lead – Blockchain & Attendance</div>
-          <p class="team-desc">Hybrid blockchain RFID attendance and Segmented Polyline Analysis for routing.</p>
+          <h3>Thanaweera A.P.K.S.</h3>
+          <div class="member-id">IT22606624</div>
+          <div class="team-role">Lead – Accident & Window Safety</div>
+          <p class="team-desc">Multi-sensor accident/hazard detection & YOLOv8-based student behavior monitoring.</p>
           <div class="team-tags">
-            <span>Ethereum</span><span>OSRM</span><span>MongoDB</span>
+            <span>ESP32</span><span>YOLOv8</span><span>MPU9250</span>
           </div>
-          <a href="#progress" class="member-link" onclick="showMember(4)">View Progress <i class="fas fa-arrow-right"></i></a>
+          <a href="#progress" class="member-link" onclick="showMember(1)">View Progress <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -1017,7 +1022,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <i class="fas fa-shield-halved"></i>
+      <img src="images/logo.png" alt="Logo" style="height: 34px; width: auto; margin-right: 12px;">
       <span>SISURAKSHA</span>
     </div>
     <p class="footer-tagline">Protecting the Future of Sri Lanka</p>
