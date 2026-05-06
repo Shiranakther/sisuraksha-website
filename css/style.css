@@ -748,7 +748,39 @@ img { max-width: 100%; display: block; }
 .member-id {
   font-size: 0.78rem; color: var(--text-muted);
   font-family: var(--font-heading); letter-spacing: 0.06em;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+.member-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-family: var(--font-heading);
+  margin-bottom: 0.8rem;
+  transition: all 0.2s;
+  padding: 0.1rem 0.6rem;
+  border-radius: 4px;
+}
+.member-email:hover {
+  color: var(--gold-dark);
+  background: rgba(255,192,0,0.08);
+}
+.member-email i {
+  color: var(--gold-dark);
+  font-size: 0.85rem;
+}
+.member-panel .member-email {
+  color: rgba(255,255,255,0.6);
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
+.member-panel .member-email:hover {
+  color: var(--gold-light);
+  background: rgba(255,255,255,0.05);
+}
+.member-panel .member-email i {
+  color: var(--gold);
 }
 .team-role {
   font-size: 0.82rem; font-weight: 700;
